@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(32, 32, 32);
+  font-family: "Cairo", sans-serif;
+  color: rgb(119, 192, 77);
+}
+.text {
+  overflow: hidden;
+  width: fit-content;
+  margin: 30px auto 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  border: 2px solid rgb(119, 192, 77);
+}
+.text h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  translate: -50% -50%;
+  transition: transform 0.4s;
+  -webkit-transition: transform 0.4s;
+  -moz-transition: transform 0.4s;
+  -ms-transition: transform 0.4s;
+  -o-transition: transform 0.4s;
+}
+.text h1:last-child {
+  transform: translateX(calc(-100% + -50px));
+  -webkit-transform: translateX(calc(-100% + -50px));
+  -moz-transform: translateX(calc(-100% + -50px));
+  -ms-transform: translateX(calc(-100% + -50px));
+  -o-transform: translateX(calc(-100% + -50px));
+}
+.text:hover h1:first-child {
+  transform: translateX(calc(100% + 50px));
+  -webkit-transform: translateX(calc(100% + 50px));
+  -moz-transform: translateX(calc(100% + 50px));
+  -ms-transform: translateX(calc(100% + 50px));
+  -o-transform: translateX(calc(100% + 50px));
+}
+.text:hover h1:last-child {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
